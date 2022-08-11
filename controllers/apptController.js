@@ -28,11 +28,12 @@ const getAppt = async (req, res) => {
 
 // Create a new appt
 const createAppt = async (req, res) => {
-    const {apptId, date, timeslot, clientId, bankerId, title} = req.body;
-
+    console.log('called1')
+    const {apptId, endDate,startDate, notes, clientId, bankerId, title} = req.body;
+    console.log('called2')
     // add doc to db
     try {
-        const appt = await Appt.create({apptId, date, timeslot, clientId, bankerId, title});
+        const appt = await Appt.create({apptId, endDate,startDate, notes, clientId, bankerId, title});
         res.status(200).json(appt);
     } catch (err) {
         res.status(400).json({error: err.message});

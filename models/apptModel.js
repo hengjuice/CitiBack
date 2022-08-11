@@ -2,8 +2,9 @@ const mongoose = require("mongoose");
 
 const apptSchema = new mongoose.Schema ({
     apptId: String,
-    date: Date,
-    timeslot: String,
+    endDate: Date,
+    startDate: Date,
+    notes: String,
     clientId: Number,
     bankerId: Number,
     title: String
