@@ -39,16 +39,16 @@ const bankerSchema = new mongoose.Schema ({
 const Banker = mongoose.model("Banker", bankerSchema);
 
 const banker = new Banker ({
-    bankerId: 1,
-    name: 'Zaki',
-    availability: {
-        'Monday': {'8am': true, '9am': false, '10am': false, '11am': true},
-        'Tuesday': {'8am': true, '9am': true, '10am': false, '11am': false},
-        'Wednesday': {'8am': true, '9am': false, '10am': false, '11am': true},
-        'Thursday': {'8am': true, '9am': true, '10am': false, '11am': false},
-        'Friday': {'8am': false, '9am': false, '10am': false, '11am': false},
+    "bankerId": 1,
+    "name": "Zaki",
+    "availability": {
+        "Monday": {"8am": true, "9am": false, "10am": false, "11am": true},
+        "Tuesday": {"8am": true, "9am": true, "10am": false, "11am": false},
+        "Wednesday": {"8am": true, "9am": false, "10am": false, "11am": true},
+        "Thursday": {"8am": true, "9am": true, "10am": false, "11am": false},
+        "Friday": {"8am": false, "9am": false, "10am": false, "11am": false},
 },
-    appts: {'appt_1': '001', 'appt_2': '002', 'appt_3': '003'}
+    "appts": {"appt_1": "001", "appt_2": "002", "appt_3": "003"}
 });
 banker.save();
 
@@ -68,17 +68,17 @@ banker.save();
 // const Appt = mongoose.model("Appt", ApptSchema);
 
 // const appt = new Appt ({
-//     apptId: '001',
-//     date: '2022-01-01',
-//     timeslot: '8am',
-//     clientId: ,
-//     bankerId: ,
-//     title: 'Tesla stock split update meeting'
+//     "apptId": "001",
+//     "date": "2022-01-01",
+//     "timeslot": "8am",
+//     "clientId": "001",
+//     "bankerId": "002",
+//     "title": "Tesla stock split update meeting"
 // });
 // info.save();
 
 
-console.log("Successfully connected");
+// console.log("Successfully connected");
 
 
 
