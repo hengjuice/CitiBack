@@ -1,0 +1,137 @@
+// app.use(bodyParser.urlencoded({ extended: true}));
+// app.use(bodyParser.json());
+
+
+
+
+// app.get('/scheduler', function(req,res){
+//   res.sendFile(__dirname + "/scheduler.html")
+// })
+// app.post('/scheduler', function(req,res){
+//     var client_id = req.body.clientId;
+//     var cname = req.body.name;
+
+//     var result = getClient(MongoClient, url, 6, "testes");
+//     res.send(result.name);
+    
+// });
+
+
+
+
+
+
+
+// function insertClient(MongoClient, url, clientId, name, appts, totalAssets, assetBreakdown) {
+//   MongoClient.connect(url, function(err, db) {
+//     if (err) {
+//         console.log("Client errrrrrrrr");
+//     } 
+//     else {
+//         var clients = db.db('testDB');
+//         var client1 = {
+//           clientId: clientId,
+//           name: name,
+//           appts: appts,
+//           totalAssets: totalAssets,
+//           assetBreakdown: assetBreakdown
+//         }
+        
+//         }
+//         clients.collection("clients").insertOne(client1, (err, res) => {
+//             if (err) {
+//                 console.log("Never add client");
+//             }
+//             else {
+//                 console.log("Client added!");
+//                 db.close();
+//             } 
+//         })
+//     }
+// );
+// }
+
+// function insertBanker(MongoClient, url, bankerId, name, availability, appts) {
+//   MongoClient.connect(url, function(err, db) {
+//     if (err) {
+//         console.log("Banker errrrrrrrr");
+//     } 
+//     else {
+//         var bankers = db.db('testDB');
+//         var banker1 = {
+//           bankerId: bankerId,
+//           name: name,
+//           availability: availability,
+//           appts: appts,
+//         }
+        
+//         }
+//         bankers.collection("bankers").insertOne(banker1, (err, res) => {
+//             if (err) {
+//                 console.log("Never add banker");
+//             }
+//             else {
+//                 console.log("Banker added!");
+//                 db.close();
+//             } 
+//         })
+//     }
+// );
+// }
+
+// function insertAppt(MongoClient, url, apptId, date, timeslot, clientId, bankerId, title) {
+//   MongoClient.connect(url, function(err, db) {
+//     if (err) {
+//         console.log("Appt errrrrrrrr");
+//     } 
+//     else {
+//         var appts = db.db('testDB');
+//         var appt1 = {
+//           apptId: apptId,
+//           date: date,
+//           timeslot: timeslot,
+//           clientId: clientId,
+//           bankerId: bankerId,
+//           title: title
+//         }
+        
+//         }
+//         appts.collection("appts").insertOne(appt1, (err, res) => {
+//             if (err) {
+//                 console.log("Never add appt");
+//             }
+//             else {
+//                 console.log("Appt added!");
+//                 db.close();
+//             } 
+//         })
+//     }
+// );
+// }
+
+// function getClient(MongoClient, url, client_id, name) {
+//   MongoClient.connect(url, async function f2(err, db) {
+//     if (err) {
+//       console.log("Get errrrrrrrr");
+//   } 
+//   else {
+//       var sel = db.db('testDB');
+//       await sel.collection("clients").findOne({'clientId': client_id, 'name': name}, function f1(err, result) {
+//         if (err) {
+//           console.log("Client not found");
+//         }
+//         else {
+//           console.log("Client found!");
+//           db.close();
+//           console.log(result);
+//           global_result = result;
+//         }
+//       })
+//       // return f1;
+//   }
+// })
+//   // return f2;
+// }
+
+
+
